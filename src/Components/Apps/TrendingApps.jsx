@@ -1,0 +1,30 @@
+import React from "react";
+import AppCard from "./AppCard";
+
+const TrendingApps = () => {
+  return (
+    <div className="container mx-auto w-[95%] md:w-[98%] text-center mb-20">
+      <div className=" mb-10">
+        <h2 className="text-2xl md:text-5xl font-semibold md:font-bold mb-4">
+          Trending Apps
+        </h2>
+        <p className="text-sm md:text-lg text-gray-400 ">
+          Explore All Trending Apps on the Market developed by us
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <AppCard />
+        <AppCard />
+        <AppCard />
+        <AppCard />
+      </div>
+      <div className="mt-10">
+        <button className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none">
+          Show All
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default TrendingApps;
