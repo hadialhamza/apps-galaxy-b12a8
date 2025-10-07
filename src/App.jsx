@@ -1,7 +1,9 @@
+import Navbar from "./Components/Navbar/Navbar";
+
 function App() {
   return (
     <>
-      <h1>Apps Galaxy</h1>
+    <Navbar></Navbar>
     </>
   );
 }
