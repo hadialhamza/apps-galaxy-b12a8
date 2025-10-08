@@ -1,11 +1,15 @@
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 import { FaRegStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const AppCard = ({ app }) => {
-  const { image, title, ratingAvg, downloads } = app;
+  const { image, title, ratingAvg, downloads, id } = app;
   return (
-    <div className="flex flex-col p-4 rounded bg-white cursor-pointer hover:scale-105 transition-all duration-200">
+    <Link
+      to={`/apps/${id}`}
+      className="flex flex-col p-4 rounded bg-white cursor-pointer hover:scale-105 transition-all duration-200"
+    >
       <div className=" rounded-lg overflow-hidden">
         <img src={image} alt="" className="w-full object-cover" />
       </div>
@@ -18,7 +22,7 @@ const AppCard = ({ app }) => {
           <FaRegStar /> {ratingAvg}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
