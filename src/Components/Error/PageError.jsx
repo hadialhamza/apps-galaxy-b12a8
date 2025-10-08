@@ -8,9 +8,9 @@ const PageError = () => {
   const error = useRouteError();
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
         <Navbar/>
-      <div className="w-full h-screen flex flex-col justify-center items-center">
+      <div className="w-full flex-1 flex flex-col justify-center items-center">
         <img src={pageError} alt="" />
         <h2 className="text-2xl md:text-5xl font-semibold md:font-bold my-4">
           Oops, page not found!

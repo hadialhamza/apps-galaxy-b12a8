@@ -1,8 +1,11 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import AppCard from "../Apps/AppCard";
+import useApplications from "../../Hooks/useApplications";
 
 const AllApplications = () => {
+  const { applications } = useApplications();
+  console.log(applications);
   return (
     <div className="my-12 sm:my-16 lg:my-20">
       <div className="container mx-auto w-[95%] md:w-[98%]">
@@ -14,18 +17,17 @@ const AllApplications = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        <div className="flex items-center justify-between mb-4">
-          <h1 className="text-2xl font-semibold">(132) Apps Found</h1>
+        <div className="flex items-center justify-between mb-8 px-8">
+          <h1 className="text-2xl font-semibold">{applications.length} Apps Found</h1>
           <label className="input text-base font-normal text-gray-800">
             <IoSearchOutline />
             <input type="search" required placeholder="Search Apps" />
           </label>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <AppCard />
-          <AppCard />
-          <AppCard />
-          <AppCard />
+          {applications.map((app) => (
+            <AppCard key={app.id} app={app} />
+          ))}
         </div>
       </div>
     </div>

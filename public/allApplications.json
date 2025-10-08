@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/RTHFdrcG/NoteMate.png",
+    "title": "NoteMate",
+    "companyName": "Cloudify Labs",
+    "description": "NoteMate is built for fast capture and calm thinking. Instead of crowding you with controls, it presents a focused editor with Markdown support, quick formatting, and instant autosave across devices. Create notebooks, nest tags, and pin essentials so your most important notes are always one tap away. Powerful, typo-tolerant search helps you resurface ideas in seconds.\n\nFor structured work, NoteMate lets you insert checklists, code blocks, attachments, and embedded images that stay perfectly in sync on phone and desktop. Version history and offline mode ensure you never lose progress, even without a connection. Shared notebooks make it simple to collaborate while keeping personal notes private.\n\nWeekly insights summarize what you wrote, edited, and referenced the most so you can spot patterns in your thinking. With encryption at rest and optional passcodes, your writing stays secure. NoteMate keeps the interface minimal and the workflow deliberate—so you can think, write, and ship ideas with less friction.",
+    "size": "48 MB",
+    "reviews": "12.5K",
+    "ratingAvg": 4.6,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 9280 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/GQLw41xJ/FitTrack.png",
+    "title": "FitTrack",
+    "companyName": "NextMotion Ltd.",
+    "description": "FitTrack turns activity data into practical guidance. Log workouts, steps, calories, and sleep while the app builds adaptive goals that respond to your progress week by week. Clear charts show trends for weight, pace, and heart rate so you can train smarter—not just harder.\n\nMeal logging and macro targets make nutrition management straightforward. Connect your smartwatch for live metrics and receive coach-style nudges when it’s time to recover, hydrate, or push for a personal best. Share plans with friends or keep everything private—the choice is yours.\n\nFitTrack’s coaching engine highlights what’s working and where to adjust, from split improvements to recovery depth. Whether you’re beginning a routine or preparing for a race, you’ll get structured plans, sensible reminders, and the motivation to stay consistent.",
+    "size": "92 MB",
+    "reviews": "23K",
+    "ratingAvg": 4.4,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 6400 },
+      { "name": "5 star", "count": 10400 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/twXTc0Hr/Streamy.png",
+    "title": "Streamy",
+    "companyName": "NovaStream",
+    "description": "Streamy is a short-video platform that balances discovery with creative control. A refined home feed learns what you enjoy and keeps playback smooth—even on weaker connections. Tools for trimming, filters, captions, and licensed audio make producing polished clips fast.\n\nCreators get analytics that actually help: audience retention, completion rate, and best-time-to-post suggestions. Community safety is built in with clear controls for comments, duet permissions, and reporting.\n\nWhether you’re here to watch or to build a following, Streamy keeps the experience personal, responsible, and fun. Explore trends, start challenges, and join a global conversation—one clip at a time.",
+    "size": "145 MB",
+    "reviews": "90.5K",
+    "ratingAvg": 4.1,
+    "downloads": "85M",
+    "ratings": [
+      { "name": "1 star", "count": 8700 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 27000 },
+      { "name": "5 star", "count": 24800 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/8LMgLJJd/PicFix.png",
+    "title": "PicFix",
+    "companyName": "VisionTech Studios",
+    "description": "PicFix restores, enhances, and stylizes photos with AI that respects natural detail. One-tap Enhance corrects exposure, contrast, and color while preserving skin tones. Advanced tools remove noise, sharpen edges, and revive old, low-resolution images.\n\nPortrait mode offers subtle retouching—blemish removal, teeth whitening, and background blur—without the plastic look. When you want creative flavor, filter packs and LUTs add professional character in seconds.\n\nBatch processing, non-destructive edits, and export presets make PicFix equally useful for everyday shots and serious workflows. Create, refine, and share with confidence—no steep learning curve required.",
+    "size": "68 MB",
+    "reviews": "7.6K",
+    "ratingAvg": 4.7,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5200 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/JR3VCj2Q/TuneHub.png",
+    "title": "TuneHub",
+    "companyName": "AudioPulse",
+    "description": "TuneHub delivers a personalized music experience built around your taste, not algorithms alone. Explore millions of tracks and podcasts, then save or download for offline listening in high-quality audio. Smart mixes evolve with every like and skip.\n\nSeamless device handoff moves your session from phone to desktop to car without missing a beat. Collaborative playlists make it easy to build shared soundtracks for trips, workouts, and study sessions.\n\nFrom deep discovery to background listening, TuneHub keeps controls simple and recommendations relevant. It’s the library that learns you—and plays what fits the moment.",
+    "size": "132 MB",
+    "reviews": "215K",
+    "ratingAvg": 4.5,
+    "downloads": "220M",
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 31000 },
+      { "name": "3 star", "count": 41000 },
+      { "name": "4 star", "count": 48000 },
+      { "name": "5 star", "count": 70000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/mrnF7YHb/FinMate.png",
+    "title": "FinMate",
+    "companyName": "BudgetWave",
+    "description": "FinMate brings clarity to everyday money. Link accounts securely and watch transactions auto-categorize into simple charts you can actually use. Set budgets, create savings targets, and get gentle alerts before you overspend.\n\nShared budgets help households coordinate bills and groceries while keeping personal purchases private. Export-ready reports and recurring transaction detection reduce month-end admin to a few taps.\n\nWith strong encryption and a privacy-first approach, your financial data stays yours. FinMate turns numbers into decisions—so you can plan with confidence.",
+    "size": "54 MB",
+    "reviews": "13.4K",
+    "ratingAvg": 4.8,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/sJtyQ5HX/Gamify.png",
+    "title": "Gamify",
+    "companyName": "PixelOrbit",
+    "description": "Gamify is your launchpad to discover, track, and compete across mobile games. A curated home screen surfaces new releases by genre and difficulty, while leaderboards keep friendly rivalries alive.\n\nMatchmaking, clubs, and seasonal events make it easy to find teammates and earn exclusive cosmetics. Low-latency infrastructure keeps sessions stable even on average networks.\n\nWhether you play ten minutes or ten hours, Gamify turns every session into progress with stats, milestones, and rewards that feel meaningful.",
+    "size": "88 MB",
+    "reviews": "189K",
+    "ratingAvg": 4.3,
+    "downloads": "150M",
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 19000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 47000 },
+      { "name": "5 star", "count": 72000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/N6qkSYb6/ChatWise.png",
+    "title": "ChatWise",
+    "companyName": "Connectify Co.",
+    "description": "ChatWise combines speed with privacy you can trust. Messages sync instantly across devices with end-to-end encryption by default. HD voice and video calls adapt to bandwidth so conversations stay clear.\n\nOrganize groups with topics, mentions, and admin tools that keep chats productive. Share large files, voice notes, and photos without worrying about compression.\n\nWith minimal battery impact and precise notification controls, ChatWise fits into your day without getting in the way. It’s communication that feels effortless and secure.",
+    "size": "120 MB",
+    "reviews": "87K",
+    "ratingAvg": 4.6,
+    "downloads": "35M",
+    "ratings": [
+      { "name": "1 star", "count": 4800 },
+      { "name": "2 star", "count": 5400 },
+      { "name": "3 star", "count": 9000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 49800 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/g08bV82/Taskly.png",
+    "title": "Taskly",
+    "companyName": "Productify",
+    "description": "Taskly turns goals into a plan you can see. Drag tasks on a Kanban board, add deadlines and priorities, and let smart reminders nudge you before you fall behind. Views for Today, Upcoming, and Completed keep the week in focus.\n\nFor projects, break work into subtasks with checklists and attachments. Shared boards support light collaboration without heavy process, while personal boards keep private work separate.\n\nProgress charts highlight where time goes so you can refine estimates and finish with confidence. Taskly keeps productivity human: simple, visual, and satisfying.",
+    "size": "60 MB",
+    "reviews": "15.8K",
+    "ratingAvg": 4.9,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 13100 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/ddfRBqc/Shopix.jpg",
+    "title": "Shopix",
+    "companyName": "EcomFlow",
+    "description": "Shopix makes online shopping fast and reassuring. Browse curated collections, compare prices, and check out securely with your favorite payment methods. Real-time order tracking and easy returns remove the usual friction.\n\nPersonalized offers learn your style over time, surfacing relevant deals instead of noisy ads. With verified reviews and seller ratings, you buy with clarity.\n\nFrom everyday essentials to gifts, Shopix saves time at every step—so you spend less effort and get more value.",
+    "size": "115 MB",
+    "reviews": "62K",
+    "ratingAvg": 4.2,
+    "downloads": "50M",
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 11000 },
+      { "name": "4 star", "count": 13000 },
+      { "name": "5 star", "count": 21000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/DDJwZg0v/Air-Journey.jpg",
+    "title": "AirJourney",
+    "companyName": "Skylink Apps",
+    "description": "AirJourney centralizes flights, stays, and itineraries in a single timeline. Search broadly, filter by what actually matters, and set price alerts that notify you when to book.\n\nLive trip updates track gates, delays, and baggage claim details. Save favorite routes, share plans with companions, and keep boarding passes accessible offline.\n\nFrom research to check-in, AirJourney reduces the stress of planning so you can focus on the trip itself.",
+    "size": "98 MB",
+    "reviews": "8.8K",
+    "ratingAvg": 4.5,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/ksnLg18X/CineMate.png",
+    "title": "CineMate",
+    "companyName": "ReelFlow Media",
+    "description": "CineMate is your companion for discovering what to watch next. Browse editorial lists, dive into trailers, and see where each title is streaming today. Recommendations adapt to your ratings and watch history.\n\nCreate separate lists for theaters, streaming, and classics to revisit. Share mini-reviews with friends and follow trusted critics for a smarter queue.\n\nWith showtimes, release alerts, and cross-platform tracking, CineMate keeps your movie life organized and inspiring.",
+    "size": "77 MB",
+    "reviews": "19K",
+    "ratingAvg": 4.3,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 8900 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co.com/FkpVtY36/EduGo.png",
+    "title": "EduGo",
+    "companyName": "Learnify Labs",
+    "description": "EduGo blends instructor-led courses with adaptive practice. Bite-sized lessons, hands-on projects, and quick quizzes keep momentum high, while progress dashboards show exactly what to review next.\n\nCertificates verify completion, and study streaks reward consistency without pressure. Download lessons for offline learning and pick up where you left off on any device.\n\nFrom beginner fundamentals to career upskilling, EduGo makes learning structured, measurable, and enjoyable.",
+    "size": "82 MB",
+    "reviews": "54K",
+    "ratingAvg": 4.8,
+    "downloads": "28M",
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 8700 },
+      { "name": "5 star", "count": 38300 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co.com/dwXsfMRn/CookMate.png",
+    "title": "CookMate",
+    "companyName": "Yumly Studios",
+    "description": "CookMate is a kitchen companion that plans with you. Import recipes from anywhere, scale servings automatically, and generate tidy shopping lists that avoid duplicates. Step-by-step cooking mode keeps the screen awake and readable.\n\nFilter by diet, prep time, and available ingredients to decide what’s realistic tonight. Nutrition breakdowns help you balance meals without extra apps.\n\nSave family favorites, discover new staples, and build a personal cookbook that actually gets used. Cooking at home just became simpler—and more fun.",
+    "size": "63 MB",
+    "reviews": "7.4K",
+    "ratingAvg": 4.7,
+    "downloads": "4.5M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/jZ86007r/Readly.png",
+    "title": "Readly",
+    "companyName": "LiteraTech",
+    "description": "Readly brings books, comics, and magazines into a single, beautifully readable library. Customize fonts, spacing, and color themes—including a true dark mode—to reduce eye strain for long sessions.\n\nBookmarks, highlights, and notes sync across devices so study and leisure reading stay organized. Download titles for offline travel and pick up on the exact page later.\n\nWith smart discovery that respects your preferences, Readly helps you read more of what you love—and find what you didn’t know you were missing.",
+    "size": "110 MB",
+    "reviews": "32K",
+    "ratingAvg": 4.5,
+    "downloads": "18M",
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 2700 },
+      { "name": "3 star", "count": 4300 },
+      { "name": "4 star", "count": 6800 },
+      { "name": "5 star", "count": 15900 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co.com/8gXtX39Z/SnapCart.png",
+    "title": "SnapCart",
+    "companyName": "RetailSync",
+    "description": "SnapCart turns receipts into insights and rewards. Scan your purchases to earn cashback and automatically categorize spending across supermarkets, pharmacies, and more.\n\nMonthly summaries reveal where your budget actually goes, while personalized offers reduce costs on items you buy anyway. Privacy controls let you choose what to share for rewards.\n\nIt’s a simple loop: shop, scan, save. Build better habits without changing where you shop.",
+    "size": "55 MB",
+    "reviews": "4.5K",
+    "ratingAvg": 4.4,
+    "downloads": "3.5M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1800 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/1pJ9jqf/MediLink.png",
+    "title": "MediLink",
+    "companyName": "HealthChain",
+    "description": "MediLink connects patients, doctors, and pharmacies with less paperwork. Book appointments, check in digitally, and receive prescriptions in a secure vault you control.\n\nCare teams can share test results and instructions with clear timelines and reminders. Emergency access lets you share key records with a code when every second counts.\n\nWith encryption, audit logs, and regional compliance, MediLink keeps health data safe while making care easier to navigate.",
+    "size": "70 MB",
+    "reviews": "9.8K",
+    "ratingAvg": 4.6,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 5200 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/Xx6W9pmn/Weatherly.png",
+    "title": "Weatherly",
+    "companyName": "SkyWatch Labs",
+    "description": "Weatherly focuses on accuracy you can plan around. Get minute-by-minute precipitation, live radar, and severe weather alerts tuned to your exact location. Hourly and 10-day views keep weekends and travel clear.\n\nWidgets and lock-screen summaries surface the essentials without opening the app. Customize what you see—UV, wind, air quality—to match your day.\n\nFrom commutes to outdoor projects, Weatherly gives you the confidence to schedule with fewer surprises.",
+    "size": "50 MB",
+    "reviews": "41K",
+    "ratingAvg": 4.3,
+    "downloads": "27M",
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 9200 },
+      { "name": "5 star", "count": 21600 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/tPsjWqSx/Translate-X.png",
+    "title": "TranslateX",
+    "companyName": "LinguaSoft",
+    "description": "TranslateX lets you speak and understand over 100 languages with natural voice and text translation. Conversation Mode keeps both sides in sync, while Camera Translate handles menus, signs, and documents instantly.\n\nOffline packs ensure you’re never stranded without data. Phrasebooks and saved favorites make frequent requests faster on repeat trips.\n\nFrom quick chats to business travel, TranslateX removes language barriers with speed and clarity.",
+    "size": "85 MB",
+    "reviews": "62K",
+    "ratingAvg": 4.7,
+    "downloads": "45M",
+    "ratings": [
+      { "name": "1 star", "count": 3100 },
+      { "name": "2 star", "count": 4200 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 10400 },
+      { "name": "5 star", "count": 39200 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/bMXnZkKR/TravelGo.png",
+    "title": "TravelGo",
+    "companyName": "Tripify Global",
+    "description": "TravelGo builds thoughtful itineraries around your budget and pace. Add flights, stays, and sights; the app organizes days automatically with map-first navigation and realistic timing.\n\nExpense tracking and currency conversion keep costs visible as you go. Share plans with companions and collaborate on the schedule without endless chats.\n\nFrom weekend escapes to multi-city adventures, TravelGo keeps trips organized, flexible, and memorable.",
+    "size": "93 MB",
+    "reviews": "8.3K",
+    "ratingAvg": 4.6,
+    "downloads": "6.2M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://i.ibb.co.com/XrNBGc46/Safe-Guard.png",
+    "title": "SafeGuard",
+    "companyName": "CyberWave",
+    "description": "SafeGuard combines antivirus, VPN, and privacy tools in one lightweight app. Real-time scanning blocks malware before it spreads, while web protection warns about phishing and unsafe links.\n\nOne-tap VPN encrypts traffic on public Wi-Fi and lets you choose regions for a more open internet. Privacy reports summarize trackers blocked and permissions in use.\n\nWith automatic updates and low battery impact, SafeGuard runs quietly in the background—so your phone stays protected without feeling locked down.",
+    "size": "125 MB",
+    "reviews": "95K",
+    "ratingAvg": 4.2,
+    "downloads": "87M",
+    "ratings": [
+      { "name": "1 star", "count": 11000 },
+      { "name": "2 star", "count": 13000 },
+      { "name": "3 star", "count": 16000 },
+      { "name": "4 star", "count": 21000 },
+      { "name": "5 star", "count": 34000 }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://i.ibb.co.com/GQMQdbKv/PlantPal.png",
+    "title": "PlantPal",
+    "companyName": "Greenify Inc.",
+    "description": "PlantPal identifies species from a photo and builds a simple care plan for each one. Watering schedules adapt to season and climate, while sunlight and soil tips prevent common issues before they start.\n\nIf something looks off, Diagnostics suggests likely causes—overwatering, pests, nutrient gaps—and how to fix them. A clean dashboard keeps your whole collection organized.\n\nWhether you’re starting with succulents or managing a jungle, PlantPal makes plant care predictable and rewarding.",
+    "size": "64 MB",
+    "reviews": "7.2K",
+    "ratingAvg": 4.8,
+    "downloads": "4.8M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://i.ibb.co.com/RGLNKhfv/Home-Connect.png",
+    "title": "HomeConnect",
+    "companyName": "SmartHaus",
+    "description": "HomeConnect brings all your smart devices into a single, reliable dashboard. Control lights, climate, cameras, and more with scenes that adapt to schedule and presence.\n\nGranular permissions let family members access exactly what they need, while activity history improves security awareness. Remote access is encrypted end-to-end.\n\nWith broad device support and quick setup, HomeConnect makes a scattered smart home feel unified and effortless.",
+    "size": "140 MB",
+    "reviews": "37K",
+    "ratingAvg": 4.4,
+    "downloads": "22M",
+    "ratings": [
+      { "name": "1 star", "count": 1900 },
+      { "name": "2 star", "count": 2600 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 7500 },
+      { "name": "5 star", "count": 21000 }
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://i.ibb.co.com/Z68tFPtK/Music-Mixr.png",
+    "title": "MusicMixr",
+    "companyName": "BeatForge",
+    "description": "MusicMixr makes production approachable without sacrificing control. Start ideas with AI-assisted stems, royalty-free loops, and drum kits tuned for mobile creation. Arrange sections visually, then fine-tune with EQ, compression, and automation.\n\nLive recording captures vocals or instruments with latency-aware monitoring. Export stems or full tracks to share, collaborate, or continue in your desktop DAW.\n\nWhether you’re sketching beats on the move or finishing a demo, MusicMixr keeps the workflow fast, musical, and fun.",
+    "size": "150 MB",
+    "reviews": "19.5K",
+    "ratingAvg": 4.5,
+    "downloads": "13M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 4600 },
+      { "name": "5 star", "count": 10300 }
+    ]
+  }
+]

@@ -1,7 +1,13 @@
 import React from "react";
 import AppCard from "./AppCard";
+import useApplications from "../../Hooks/useApplications";
+import { Link } from "react-router";
 
 const TrendingApps = () => {
+  const { applications, loading, error } = useApplications();
+
+  const trendingApps = applications.slice(0, 8);
+  console.log(trendingApps);
   return (
     <div className="container mx-auto w-[95%] md:w-[98%] text-center mb-20">
       <div className=" mb-10">
@@ -13,15 +19,17 @@ const TrendingApps = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
+        {trendingApps.map((app) => (
+          <AppCard key={app.id} app={app} />
+        ))}
       </div>
       <div className="mt-10">
-        <button className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none">
+        <Link
+          to="/apps"
+          className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none"
+        >
           Show All
-        </button>
+        </Link>
       </div>
     </div>
   );
