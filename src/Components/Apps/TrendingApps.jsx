@@ -4,10 +4,9 @@ import useApplications from "../../Hooks/useApplications";
 import { Link } from "react-router";
 
 const TrendingApps = () => {
-  const { applications, loading, error } = useApplications();
+  const { applications } = useApplications();
 
   const trendingApps = applications.slice(0, 8);
-  console.log(trendingApps);
   return (
     <div className="container mx-auto w-[95%] md:w-[98%] text-center mb-20">
       <div className=" mb-10">

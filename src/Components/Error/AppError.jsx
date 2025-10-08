@@ -3,8 +3,8 @@ import appError from "../../assets/App-Error.png";
 
 const AppError = () => {
   return (
-    <div>
-      <div className="w-full h-[80vh] flex flex-col justify-center items-center">
+    <div className="flex flex-col max-h-screen mt-15">
+      <div className="flex-1 flex flex-col justify-center items-center">
         <img src={appError} alt="" />
         <h2 className="text-2xl md:text-5xl font-semibold md:font-bold my-4">
           OPPS!! APP NOT FOUND

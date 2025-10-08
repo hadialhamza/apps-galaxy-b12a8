@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import PageError from "../Error/PageError";
+import AppError from "../Error/AppError";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import AllApplications from "../Pages/AllApplications";
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/apps/:id",
         element: <AppDetailsPage />,
+        errorElement: <AppError />,
       },
     ],
   },

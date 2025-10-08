@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import downloadImage from "../../assets/icon-downloads.png";
 import starImage from "../../assets/icon-ratings.png";
 import reviewImage from "../../assets/icon-review.png";
 import { useParams } from "react-router";
 import useApplications from "../../Hooks/useApplications";
 import BarCharts from "../Charts/BarCharts";
+import handleInstall from "../Utils/lsFunctions";
 
 const AppDetailsPage = () => {
   const { id } = useParams();
   const { applications, loading } = useApplications();
-
+  const [disable, setDisable] = useState(false);
+  const handleDisable = () => {
+    handleInstall(app);
+    setDisable(true);
+  };
   const app = applications.find((app) => app.id === Number(id));
 
   if (loading) {
@@ -27,6 +32,7 @@ const AppDetailsPage = () => {
     ratings,
     size,
   } = app;
+
   return (
     <div>
       <div className="container mx-auto w-[95%] md:w-[98%] my-12 md:my-20">
@@ -57,7 +63,14 @@ const AppDetailsPage = () => {
               </div>
             </div>
             <div>
-              <button className="btn text-white bg-[#00D390] rounded px-6 py-6 text-base font-semibold border-none">
+              <button
+                onClick={handleDisable}
+                className={`btn text-white bg-[#00D390] rounded px-6 py-6 text-base font-semibold border-none ${
+                  disable
+                    ? "cursor-not-allowed opacity-80  pointer-events-none"
+                    : "cursor-pointer"
+                }`}
+              >
                 Install Now ({size})
               </button>
             </div>
