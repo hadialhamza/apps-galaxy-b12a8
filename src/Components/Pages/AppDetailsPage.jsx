@@ -4,6 +4,7 @@ import starImage from "../../assets/icon-ratings.png";
 import reviewImage from "../../assets/icon-review.png";
 import { useParams } from "react-router";
 import useApplications from "../../Hooks/useApplications";
+import BarCharts from "../Charts/BarCharts";
 
 const AppDetailsPage = () => {
   const { id } = useParams();
@@ -23,6 +24,8 @@ const AppDetailsPage = () => {
     reviews,
     companyName,
     description,
+    ratings,
+    size,
   } = app;
   return (
     <div>
@@ -55,14 +58,15 @@ const AppDetailsPage = () => {
             </div>
             <div>
               <button className="btn text-white bg-[#00D390] rounded px-6 py-6 text-base font-semibold border-none">
-                Install Now (291 MB)
+                Install Now ({size})
               </button>
             </div>
           </div>
         </div>
 
-        {/* Rechart Section */}
-        <div className="h-[400px]"></div>
+        <div className="mb-10 pb-10 border-b border-gray-300">
+          <BarCharts ratings={ratings} />
+        </div>
 
         <div>
           <h2 className="text-2xl font-semibold mb-6">Description</h2>
