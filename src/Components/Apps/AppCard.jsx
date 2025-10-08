@@ -9,7 +9,7 @@ const AppCard = ({ app }) => {
       <div className=" rounded-lg overflow-hidden">
         <img src={image} alt="" className="w-full object-cover" />
       </div>
-      <h2 className="text-xl font-semibold my-4">{title}</h2>
+      <h2 className="text-left text-xl font-semibold my-4">{title}</h2>
       <div className="flex items-center justify-between">
         <p className="flex items-center gap-2 bg-[#F1F5E8] rounded  py-[6px] px-[10px] text-[#00D390] text-base font-semibold">
           <FiDownload /> {downloads}

@@ -22,14 +22,22 @@ const Hero = () => {
         </p>
 
         <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
-          <button className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
+          <a
+            href="https://play.google.com/store"
+            target="_blank"
+            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto"
+          >
             <img src={googlePlay} alt="" className="w-6 sm:w-8" />
             Google Play
-          </button>
-          <button className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
+          </a>
+          <a
+            href="https://www.apple.com/app-store/"
+            target="_blank"
+            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto"
+          >
             <img src={appStore} alt="" className="w-6 sm:w-8" />
             App Store
-          </button>
+          </a>
         </div>
 
         <div className="flex justify-center mt-8 sm:mt-10">
