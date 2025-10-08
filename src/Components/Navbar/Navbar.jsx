@@ -2,33 +2,39 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { GrGithub } from "react-icons/gr";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const navLinks = [
-  { id: 1, name: "Home" },
-  { id: 2, name: "Apps" },
-  { id: 3, name: "Installation" },
+  { id: 1, name: "Home", path: "/" },
+  { id: 2, name: "Apps", path: "/apps" },
+  { id: 3, name: "Installation", path: "/installation" },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const activeLink = ({ isActive }) =>
+    `cursor-pointer hover:text-[#632EE3] transition-colors duration-200 ${
+      isActive ? "text-[#632EE3] underline font-bold" : "hover:underline"
+    }`;
+
   return (
     <nav className="shadow bg-white">
       <div className="container mx-auto w-[95%] flex justify-between items-center py-4">
-        <div className="flex gap-2 items-center">
+        <Link to="/" className="flex gap-2 items-center">
           <img src={logo} alt="logo" className="w-10" />
           <h1 className="font-bold bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
             APPS GALAXY
           </h1>
-        </div>
+        </Link>
 
         <ul className="hidden md:flex gap-8 list-none font-medium">
           {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className="cursor-pointer hover:text-[#632EE3] hover:underline active:font-semibold transition-colors duration-200"
-            >
-              {link.name}
+            <li key={link.id}>
+              <NavLink to={link.path} className={activeLink}>
+                {link.name}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -56,7 +62,9 @@ const Navbar = () => {
                 className="cursor-pointer hover:text-[#632EE3] transition-colors duration-200"
                 onClick={() => setMenuOpen(false)}
               >
-                {link.name}
+                <NavLink to={link.path} className={activeLink}>
+                  {link.name}
+                </NavLink>
               </li>
             ))}
             <li>

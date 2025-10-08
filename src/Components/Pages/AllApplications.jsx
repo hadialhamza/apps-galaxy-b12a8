@@ -1,6 +1,6 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
-import AppCard from "./AppCard";
+import AppCard from "../Apps/AppCard";
 
 const AllApplications = () => {
   return (
