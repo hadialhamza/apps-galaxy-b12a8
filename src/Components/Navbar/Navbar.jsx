@@ -13,7 +13,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="shadow bg-white sticky top-0">
+    <nav className="shadow bg-white">
       <div className="container mx-auto w-[95%] flex justify-between items-center py-4">
         <div className="flex gap-2 items-center">
           <img src={logo} alt="logo" className="w-10" />
