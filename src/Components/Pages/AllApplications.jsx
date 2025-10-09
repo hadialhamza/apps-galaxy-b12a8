@@ -17,7 +17,7 @@ const AllApplications = () => {
 
   return (
     <div className="my-12 sm:my-16 lg:my-20">
-      <div className="container mx-auto w-[95%] md:w-[98%]">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-5xl font-semibold md:font-bold mb-4">
             Our All Applications
@@ -26,7 +26,7 @@ const AllApplications = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
-        <div className="flex items-center justify-between mb-8 px-8">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-8 px-8">
           <h1 className="text-2xl font-semibold">
             ({searchedApps.length}) Apps Found
           </h1>

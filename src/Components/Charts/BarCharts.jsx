@@ -28,7 +28,8 @@ const BarCharts = ({ ratings }) => {
         <BarChart
           data={data}
           layout="vertical"
-          margin={{ top: 10, right: 30, left: 80, bottom: 10 }}
+          margin={{ top: 10, right: 30, bottom: 10 }}
+          className="lg:ml-20"
         >
           <CartesianGrid strokeDasharray="0 0" horizontal={false} />
           <XAxis type="number" />

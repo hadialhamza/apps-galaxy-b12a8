@@ -35,16 +35,16 @@ const InstalledApps = () => {
 
   return (
     <div className="mt-12 sm:mt-16 lg:mt-20">
-      <div className="container mx-auto w-[95%] md:w-[98%] pb-10">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-5xl font-semibold md:font-bold mb-4">
+      <div className="container mx-auto px-5 pb-10">
+        <div className="text-center mb-6 md:mb-8 lg:mb-10">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold md:font-bold mb-2 lg:mb-4">
             Your Installed Apps
           </h2>
-          <p className="text-sm md:text-lg text-gray-400 ">
+          <p className="text-sm lg:text-lg text-gray-400 ">
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex flex-col md:flex-row md:px-8 gap-4 items-center justify-between mb-6">
           <h1 className="text-2xl font-semibold">
             ({install.length}) Apps Found
           </h1>
@@ -66,10 +66,10 @@ const InstalledApps = () => {
           {handleSort().map((app) => (
             <div
               key={app.id}
-              className="bg-white rounded-sm shadow-md p-4 mb-5"
+              className="bg-white rounded-sm shadow-md p-5 mb-5"
             >
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-4">
+              <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
+                <div className="flex flex-col sm:flex-row items-center gap-4">
                   <div className="w-20 rounded-lg overflow-hidden">
                     <img
                       src={app.image}
@@ -78,7 +78,9 @@ const InstalledApps = () => {
                     />
                   </div>
                   <div>
-                    <h2 className="text-xl font-semibold mb-4">{app.title}</h2>
+                    <h2 className="text-xl text-center md:text-left font-semibold mb-4">
+                      {app.title}
+                    </h2>
                     <div className="flex items-center gap-5">
                       <p className="flex items-center gap-2 text-[#00D390] text-base font-semibold">
                         <FiDownload /> {app.downloads}
@@ -90,10 +92,10 @@ const InstalledApps = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div className="w-full md:w-auto">
                   <button
                     onClick={() => handleUninstallApp(app.id)}
-                    className="btn text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none hover:scale-105 transition-all duration-300"
+                    className="btn w-full text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none hover:scale-105 transition-all duration-300"
                   >
                     Uninstall
                   </button>

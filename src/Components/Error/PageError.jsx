@@ -1,8 +1,8 @@
 import React from "react";
-import pageError from "../../assets/error-404.png";
 import { Link, useRouteError } from "react-router";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const PageError = () => {
   const error = useRouteError();
@@ -11,7 +11,14 @@ const PageError = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="w-full flex-1 flex flex-col justify-center items-center">
-        <img src={pageError} alt="" />
+        <div className="w-full">
+          <DotLottieReact
+            src="https://lottie.host/3e5eadc2-3bd5-4509-9539-39c33d50d4d0/I87t9GLXA6.lottie"
+            loop
+            autoplay
+            className="max-w-[800px] mx-auto"
+          />
+        </div>
         <h2 className="text-2xl md:text-5xl font-semibold md:font-bold my-4">
           Oops, page not found!
         </h2>

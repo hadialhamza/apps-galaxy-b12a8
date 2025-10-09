@@ -6,7 +6,7 @@ import heroImage from "../../assets/hero.png";
 const Hero = () => {
   return (
     <section className="my-12 sm:my-16 lg:my-20">
-      <div className="container mx-auto w-[92%] sm:w-[90%]">
+      <div className="container mx-auto px-6">
         <h2 className="text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-bold text-center leading-tight">
           We Build <br className="hidden sm:block" />
           <span className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
@@ -40,7 +40,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="flex justify-center mt-8 sm:mt-10">
+        <div className="flex justify-center mt-8 sm:mt-10 px-5">
           <img src={heroImage} alt="" />
         </div>
       </div>

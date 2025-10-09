@@ -20,7 +20,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="shadow bg-white">
+    <nav className="shadow bg-white px-5">
       <div className="container mx-auto w-[95%] flex justify-between items-center py-4">
         <Link to="/" className="flex gap-2 items-center">
           <img src={logo} alt="logo" className="w-10" />
@@ -57,32 +57,36 @@ const Navbar = () => {
         </div>
       </div>
 
-      {menuOpen && (
-        <div className="md:hidden bg-white shadow-inner border-t border-[#632EE3]">
-          <ul className="flex flex-col gap-4 p-4 font-medium text-center">
-            {navLinks.map((link) => (
-              <li
-                key={link.id}
-                className="cursor-pointer hover:text-[#632EE3] transition-colors duration-200"
-                onClick={() => setMenuOpen(false)}
-              >
-                <NavLink to={link.path} className={activeLink}>
-                  {link.name}
-                </NavLink>
-              </li>
-            ))}
-            <li>
-              <a
-                href="https://github.com/hadialhamza"
-                target="_blank"
-                className="btn border-none w-full flex justify-center gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 rounded hover:scale-105 transition-all duration-300"
-              >
-                <GrGithub /> Contribute
-              </a>
+      <div
+        className={`md:hidden absolute left-0 right-0 z-10 bg-white shadow-inner transition-all duration-300 ease-in-out ${
+          menuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-5 pointer-events-none"
+        }`}
+      >
+        <ul className="flex flex-col gap-4 p-4 font-medium text-center">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className="cursor-pointer hover:text-[#632EE3] transition-colors duration-200"
+              onClick={() => setMenuOpen(false)}
+            >
+              <NavLink to={link.path} className={activeLink}>
+                {link.name}
+              </NavLink>
             </li>
-          </ul>
-        </div>
-      )}
+          ))}
+          <li>
+            <a
+              href="https://github.com/hadialhamza"
+              target="_blank"
+              className="btn border-none w-full flex justify-center gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 rounded hover:scale-105 transition-all duration-300"
+            >
+              <GrGithub /> Contribute
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

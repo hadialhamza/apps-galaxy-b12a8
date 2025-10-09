@@ -5,10 +5,9 @@ import { Link } from "react-router";
 
 const TrendingApps = () => {
   const { applications } = useApplications();
-
   const trendingApps = applications.slice(0, 8);
   return (
-    <div className="container mx-auto w-[95%] md:w-[98%] text-center mb-20">
+    <div className="container mx-auto px-7 text-center mb-20">
       <div className=" mb-10">
         <h2 className="text-2xl md:text-5xl font-semibold md:font-bold mb-4">
           Trending Apps
