@@ -43,7 +43,7 @@ const Navbar = () => {
           <a
             href="https://github.com/hadialhamza"
             target="_blank"
-            className="btn border-none flex gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 rounded"
+            className="btn border-none flex gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 hover:scale-105 transition-all duration-300 rounded"
           >
             <GrGithub /> Contribute
           </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <a
                 href="https://github.com/hadialhamza"
                 target="_blank"
-                className="btn border-none w-full flex justify-center gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 rounded"
+                className="btn border-none w-full flex justify-center gap-2 items-center font-bold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-4 rounded hover:scale-105 transition-all duration-300"
               >
                 <GrGithub /> Contribute
               </a>

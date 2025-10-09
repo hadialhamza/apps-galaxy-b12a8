@@ -1,6 +1,6 @@
 import React from "react";
 import pageError from "../../assets/error-404.png";
-import { useRouteError } from "react-router";
+import { Link, useRouteError } from "react-router";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
@@ -9,7 +9,7 @@ const PageError = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-        <Navbar/>
+      <Navbar />
       <div className="w-full flex-1 flex flex-col justify-center items-center">
         <img src={pageError} alt="" />
         <h2 className="text-2xl md:text-5xl font-semibold md:font-bold my-4">
@@ -20,12 +20,15 @@ const PageError = () => {
         </p>
         <div className="text-sm md:text-lg text-gray-400 ">{error.message}</div>
         <div className="mt-4">
-          <button className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none">
+          <Link
+            to="/"
+            className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none hover:scale-105 transition-all duration-300"
+          >
             Go Back!
-          </button>
+          </Link>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

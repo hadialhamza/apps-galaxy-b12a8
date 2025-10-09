@@ -1,5 +1,6 @@
 import React from "react";
 import appError from "../../assets/App-Error.png";
+import { Link } from "react-router";
 
 const AppError = () => {
   return (
@@ -14,9 +15,12 @@ const AppError = () => {
           another apps
         </p>
         <div className="mt-4">
-          <button className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none">
+          <Link
+            to="/apps"
+            className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none hover:scale-105 transition-all duration-300"
+          >
             Go Back!
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -22,11 +22,11 @@ const InstalledApps = () => {
   const handleSort = () => {
     if (sortOrder === "size-asc") {
       return [...install].sort(
-        (a, b) => parseFloat(a.size) - parseFloat(b.size)
+        (a, b) => parseFloat(a.downloads) - parseFloat(b.downloads)
       );
     } else if (sortOrder === "size-desc") {
       return [...install].sort(
-        (a, b) => parseFloat(b.size) - parseFloat(a.size)
+        (a, b) => parseFloat(b.downloads) - parseFloat(a.downloads)
       );
     } else {
       return install;
@@ -54,8 +54,8 @@ const InstalledApps = () => {
               onChange={(e) => setSortOrder(e.target.value)}
               className="select w-auto pr-10 text-gray-500"
             >
-              <option disabled={true} value={"none"}>
-                Sort By Size
+              <option disabled={false} value={"none"}>
+                Sort By Downloads
               </option>
               <option value={"size-asc"}>Low-High</option>
               <option value={"size-desc"}>High-Low</option>
@@ -64,7 +64,10 @@ const InstalledApps = () => {
         </div>
         <div>
           {handleSort().map((app) => (
-            <div key={app.id} className="bg-white rounded p-4 mb-4">
+            <div
+              key={app.id}
+              className="bg-white rounded-sm shadow-md p-4 mb-5"
+            >
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-4">
                   <div className="w-20 rounded-lg overflow-hidden">
@@ -90,7 +93,7 @@ const InstalledApps = () => {
                 <div>
                   <button
                     onClick={() => handleUninstallApp(app.id)}
-                    className="btn text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none"
+                    className="btn text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none hover:scale-105 transition-all duration-300"
                   >
                     Uninstall
                   </button>

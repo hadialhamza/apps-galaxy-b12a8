@@ -17,7 +17,7 @@ const TrendingApps = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {trendingApps.map((app) => (
           <AppCard key={app.id} app={app} />
         ))}
@@ -25,7 +25,7 @@ const TrendingApps = () => {
       <div className="mt-10">
         <Link
           to="/apps"
-          className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none"
+          className="btn text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-3 px-8 rounded border-none hover:scale-105 transition-all duration-300"
         >
           Show All
         </Link>

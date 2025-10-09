@@ -8,10 +8,14 @@ const AppCard = ({ app }) => {
   return (
     <Link
       to={`/apps/${id}`}
-      className="flex flex-col p-4 rounded bg-white cursor-pointer hover:scale-105 transition-all duration-200"
+      className="flex flex-col p-4 rounded-xl bg-white cursor-pointer hover:scale-105 transition-all duration-200 shadow-xl"
     >
-      <div className=" rounded-lg overflow-hidden">
-        <img src={image} alt="" className="w-full object-cover" />
+      <div className=" overflow-hidden p-2">
+        <img
+          src={image}
+          alt=""
+          className="w-full object-cover bg-gray-300 border border-gray-200 rounded-xl"
+        />
       </div>
       <h2 className="text-left text-xl font-semibold my-4">{title}</h2>
       <div className="flex items-center justify-between">

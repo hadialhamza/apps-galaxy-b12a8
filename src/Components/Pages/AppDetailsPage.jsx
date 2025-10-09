@@ -26,7 +26,7 @@ const AppDetailsPage = () => {
 
   const app = applications.find((a) => a.id === Number(id));
 
-  if (loading || !app) {
+  if (loading) {
     return <div>Loading...</div>;
   }
 
@@ -53,7 +53,11 @@ const AppDetailsPage = () => {
       <div className="container mx-auto w-[95%] md:w-[98%] my-12 md:my-20">
         <div className="flex items-center gap-10 pb-10 mb-10 border-b border-gray-300">
           <div className="w-[380px] overflow-hidden ">
-            <img src={image} alt={title} className="w-full object-cover" />
+            <img
+              src={image}
+              alt={title}
+              className="w-full object-cover rounded-lg border border-gray-300"
+            />
           </div>
 
           <div className="flex flex-col justify-between w-full">
@@ -88,7 +92,7 @@ const AppDetailsPage = () => {
                     disable
                       ? "cursor-not-allowed opacity-80 pointer-events-none"
                       : "cursor-pointer"
-                  }`}
+                  } hover:scale-105 transition-all duration-300`}
               >
                 {disable ? "Installed" : `Install Now (${size})`}
               </button>

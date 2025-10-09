@@ -25,7 +25,7 @@ const Hero = () => {
           <a
             href="https://play.google.com/store"
             target="_blank"
-            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto"
+            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto hover:scale-105 transition-all duration-300"
           >
             <img src={googlePlay} alt="" className="w-6 sm:w-8" />
             Google Play
@@ -33,7 +33,7 @@ const Hero = () => {
           <a
             href="https://www.apple.com/app-store/"
             target="_blank"
-            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto"
+            className="btn py-4 sm:py-6 text-base sm:text-xl font-semibold flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto hover:scale-105 transition-all duration-300"
           >
             <img src={appStore} alt="" className="w-6 sm:w-8" />
             App Store
