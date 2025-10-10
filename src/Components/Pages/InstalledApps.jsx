@@ -5,6 +5,7 @@ import { getInstalledApps, handleUninstall } from "../Utils/lsFunctions";
 import useApplications from "../../Hooks/useApplications";
 import UnInstallCardSkeleton from "../Loader and Skeleton/UnInstallCardSkeleton";
 import EmptyPage from "../Error/EmptyPage";
+import Swal from "sweetalert2";
 
 const InstalledApps = () => {
   const { loading } = useApplications();
@@ -18,9 +19,26 @@ const InstalledApps = () => {
   }, []);
 
   const handleUninstallApp = (id) => {
-    handleUninstall(id);
-    const updatedApps = install.filter((app) => app.id !== id);
-    setInstall(updatedApps);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to use this app any more!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Uninstall it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        handleUninstall(id);
+        const updatedApps = install.filter((app) => app.id !== id);
+        setInstall(updatedApps);
+        Swal.fire({
+          title: "Uninstalled!",
+          text: "Your app has been uninstalled successfully.",
+          icon: "success",
+        });
+      }
+    });
   };
 
   const handleSort = () => {

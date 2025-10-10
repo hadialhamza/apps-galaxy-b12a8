@@ -8,6 +8,7 @@ import BarCharts from "../Charts/BarCharts";
 import handleInstall from "../Utils/lsFunctions";
 import Loader from "../Loader and Skeleton/Loader";
 import AppDetailsSkeleton from "../Loader and Skeleton/AppDetailsSkeleton";
+import Swal from "sweetalert2";
 
 const AppDetailsPage = () => {
   const { id } = useParams();
@@ -48,6 +49,11 @@ const AppDetailsPage = () => {
     if (disable) return;
     handleInstall(app);
     setDisable(true);
+    Swal.fire({
+      title: "App Installed",
+      text: `You have Installed ${title} Successfully`,
+      icon: "success",
+    });
   };
 
   return (

@@ -5,7 +5,7 @@ const AppDetailsSkeleton = () => {
   return (
     <div className="container mx-auto px-5 my-10 md:my-20 animate-fade-in">
       <div className="flex flex-col md:flex-row items-center gap-5 md:gap-10 pb-6 mb-6 md:pb-10 md:mb-10 border-b border-gray-300">
-        <div className="max-w-[230px] md:max-w-[300px] overflow-hidden w-full shadow-sm">
+        <div className="max-w-[230px] md:max-w-[300px] overflow-hidden w-full">
           <div className="skeleton w-full h-[230px] md:h-[300px] rounded-lg" />
         </div>
 
