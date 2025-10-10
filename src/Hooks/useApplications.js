@@ -12,7 +12,7 @@ const useApplications = () => {
       .then((data) => setApplications(data.data))
       .catch((err) => setError(err))
       .finally(() => {
-        setTimeout(() => setLoading(false), 1500);
+        setTimeout(() => setLoading(false), 1000);
       });
   }, []);
 

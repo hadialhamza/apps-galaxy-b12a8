@@ -4,18 +4,19 @@ import { GrGithub } from "react-icons/gr";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { Link } from "react-router";
 import { NavLink } from "react-router";
+import { FaAppStoreIos, FaDownload, FaHome } from "react-icons/fa";
 
 const navLinks = [
-  { id: 1, name: "Home", path: "/" },
-  { id: 2, name: "Apps", path: "/apps" },
-  { id: 3, name: "Installation", path: "/installation" },
+  { id: 1, name: "Home", path: "/", icon: <FaHome className="inline-flex mr-2"/> },
+  { id: 2, name: "Apps", path: "/apps", icon: <FaAppStoreIos className="inline-block mr-2"/> },
+  { id: 3, name: "Installation", path: "/installation", icon: <FaDownload className="inline-block mr-2"/> },
 ];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const activeLink = ({ isActive }) =>
-    `cursor-pointer hover:text-[#632EE3] transition-colors duration-200 ${
+    `flex items-center justify-center cursor-pointer hover:text-[#632EE3] transition-colors duration-200 ${
       isActive ? "text-[#632EE3] underline font-bold" : "hover:underline"
     }`;
 
@@ -29,10 +30,11 @@ const Navbar = () => {
           </h1>
         </Link>
 
-        <ul className="hidden md:flex gap-8 list-none font-medium">
+        <ul className="hidden md:flex gap-8 list-none text-base font-medium">
           {navLinks.map((link) => (
             <li key={link.id}>
               <NavLink to={link.path} className={activeLink}>
+                {link.icon}
                 {link.name}
               </NavLink>
             </li>
@@ -72,6 +74,7 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
             >
               <NavLink to={link.path} className={activeLink}>
+                {link.icon}
                 {link.name}
               </NavLink>
             </li>
