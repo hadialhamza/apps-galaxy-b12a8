@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import AppCard from "../Apps/AppCard";
 import useApplications from "../../Hooks/useApplications";
+import EmptyPage from "../Error/EmptyPage";
+import AppCardSkeleton from "../Loader and Skeleton/AppCardSkeleton";
 
 const AllApplications = () => {
-  const { applications } = useApplications();
-
+  const { applications, loading } = useApplications();
   const [search, setSearch] = useState("");
+  const [searching, setSearching] = useState(false);
+  useEffect(() => {
+    if (search.trim() === "") {
+      setSearching(false);
+      return;
+    }
+    setSearching(true);
+    const timer = setTimeout(() => {
+      setSearching(false);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [search]);
 
   const searchedWords = search.trim().toLocaleLowerCase();
   const searchedApps = searchedWords
@@ -40,11 +53,19 @@ const AllApplications = () => {
             />
           </label>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {searchedApps.map((app) => (
-            <AppCard key={app.id} app={app} />
-          ))}
-        </div>
+        {loading || searching ? (
+          <AppCardSkeleton />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {searchedApps.length > 0 ? (
+              searchedApps.map((app) => <AppCard key={app.id} app={app} />)
+            ) : (
+              <div className="col-span-full">
+                <EmptyPage clearSearch={() => setSearch("")} />
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

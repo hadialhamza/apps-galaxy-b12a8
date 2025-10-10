@@ -10,7 +10,7 @@ const AppCard = ({ app }) => {
       to={`/apps/${id}`}
       className="flex flex-col p-4 rounded-xl bg-white cursor-pointer hover:scale-105 transition-all duration-200 shadow-xl"
     >
-      <div className=" overflow-hidden p-2">
+      <div className="overflow-hidden p-2">
         <img
           src={image}
           alt=""

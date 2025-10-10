@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { FaRegStar } from "react-icons/fa";
 import { getInstalledApps, handleUninstall } from "../Utils/lsFunctions";
+import useApplications from "../../Hooks/useApplications";
+import UnInstallCardSkeleton from "../Loader and Skeleton/UnInstallCardSkeleton";
+import EmptyPage from "../Error/EmptyPage";
 
 const InstalledApps = () => {
+  const { loading } = useApplications();
   const [install, setInstall] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
   useEffect(() => {
@@ -63,46 +67,54 @@ const InstalledApps = () => {
           </label>
         </div>
         <div>
-          {handleSort().map((app) => (
-            <div
-              key={app.id}
-              className="bg-white rounded-sm shadow-md p-5 mb-5"
-            >
-              <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
-                <div className="flex flex-col sm:flex-row items-center gap-4">
-                  <div className="w-20 rounded-lg overflow-hidden">
-                    <img
-                      src={app.image}
-                      alt=""
-                      className="w-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h2 className="text-xl text-center md:text-left font-semibold mb-4">
-                      {app.title}
-                    </h2>
-                    <div className="flex items-center gap-5">
-                      <p className="flex items-center gap-2 text-[#00D390] text-base font-semibold">
-                        <FiDownload /> {app.downloads}
-                      </p>
-                      <p className="flex items-center gap-2 text-[#FF8811] text-base font-semibold">
-                        <FaRegStar /> {app.ratingAvg}
-                      </p>
-                      <p className="text-gray-400">{app.size}</p>
+          {install.length > 0 ? (
+            loading ? (
+              <UnInstallCardSkeleton />
+            ) : (
+              handleSort().map((app) => (
+                <div
+                  key={app.id}
+                  className="bg-white rounded-sm shadow-md p-5 mb-5"
+                >
+                  <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
+                      <div className="w-20 rounded-lg overflow-hidden">
+                        <img
+                          src={app.image}
+                          alt=""
+                          className="w-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h2 className="text-xl text-center md:text-left font-semibold mb-4">
+                          {app.title}
+                        </h2>
+                        <div className="flex items-center gap-5">
+                          <p className="flex items-center gap-2 text-[#00D390] text-base font-semibold">
+                            <FiDownload /> {app.downloads}
+                          </p>
+                          <p className="flex items-center gap-2 text-[#FF8811] text-base font-semibold">
+                            <FaRegStar /> {app.ratingAvg}
+                          </p>
+                          <p className="text-gray-400">{app.size}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-auto">
+                      <button
+                        onClick={() => handleUninstallApp(app.id)}
+                        className="btn w-full text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none hover:scale-105 transition-all duration-300"
+                      >
+                        Uninstall
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-auto">
-                  <button
-                    onClick={() => handleUninstallApp(app.id)}
-                    className="btn w-full text-white bg-[#00D390] rounded px-6 py-4 text-base font-semibold border-none hover:scale-105 transition-all duration-300"
-                  >
-                    Uninstall
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
+              ))
+            )
+          ) : (
+            <EmptyPage />
+          )}
         </div>
       </div>
     </div>

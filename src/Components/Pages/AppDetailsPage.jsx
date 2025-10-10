@@ -7,17 +7,12 @@ import useApplications from "../../Hooks/useApplications";
 import BarCharts from "../Charts/BarCharts";
 import handleInstall from "../Utils/lsFunctions";
 import Loader from "../Loader and Skeleton/Loader";
+import AppDetailsSkeleton from "../Loader and Skeleton/AppDetailsSkeleton";
 
 const AppDetailsPage = () => {
   const { id } = useParams();
   const { applications, loading } = useApplications();
   const [disable, setDisable] = useState(false);
-  const [showLoader, setShowLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowLoader(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
 
   useEffect(() => {
     try {
@@ -33,8 +28,8 @@ const AppDetailsPage = () => {
 
   const app = applications.find((a) => a.id === Number(id));
 
-  if (loading || showLoader) {
-    return <Loader />;
+  if (loading) {
+    return <AppDetailsSkeleton />;
   }
 
   const {

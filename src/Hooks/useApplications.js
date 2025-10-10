@@ -11,7 +11,9 @@ const useApplications = () => {
     axios("../allApplications.json")
       .then((data) => setApplications(data.data))
       .catch((err) => setError(err))
-      .finally(() => setLoading(false));
+      .finally(() => {
+        setTimeout(() => setLoading(false), 1500);
+      });
   }, []);
 
   return { applications, loading, error };
